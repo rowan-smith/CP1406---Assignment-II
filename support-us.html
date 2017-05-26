@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BRO: Donations/Sponsorship</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/bro.png">
+</head>
+<body>
+
+<nav>
+    <ul class="nav">
+        <li><a href="index.html">Barrier Reef Orchestra</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="supporters.html">Supporters</a></li>
+        <li><a id="current">Support Us</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="header">
+        <h1>Barrier Reef Orchestra</h1>
+    </div>
+</header>
+
+<section class="content-container">
+    <div class="main-border">
+        <div class="main">
+
+<!----------------------------Supporter form---------------->
+
+            <div id="rounded_borders">
+
+                <h1 id="member_h1">Support Us.</h1>
+                <form method="post" name="sponsorship">
+
+                    <p><strong>You are invited to become an Orchestra Benefactor and assist Townsville’s Community
+                            Orchestra with your personal and publicly acknowledged support which encourages others to
+                            do the same.</strong></p>
+                    <p class="conditions">With a philanthropic gift of $200 or more (we leave that up to you) you can
+                        become an Orchestra Benefactor and be placed on our Benefactor roll for twelve months. This
+                        roll will be published in each concert program and on our website for twelve months. As a
+                        benefactor you will also receive two complimentary tickets to our next concert, be placed on
+                        the mailing list for our newsletter and will be a guest at our annual Season’s Launch function.
+                        Donations are tax deductible.</p>
+
+                    <fieldset id = "group1">
+                        <input type="radio" name="group1">
+                        <label> Benifactor</label>
+                        <input type="radio" name="group1">
+                        <label>Sponsor</label>
+                    </fieldset>
+
+                    <fieldset id="group2">
+                        Applicant Details:
+                        <div class="form-row">
+                            <label for="title">Title :</label>
+                            <select name="Title">
+                                <option></option>
+                                <option>Mr.</option>
+                                <option>Mrs.</option>
+                                <option>Ms.</option>
+                                <option>Miss.</option>
+                                <option>Master.</option>
+                                <option>Dr.</option>
+                                <option>Prof.</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="name">Name :</label>
+                            <input id="name" type="text" name="Name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="org">Organisation :</label>
+                            <input id="org" type="text" name="organisation" required>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <div class="form-row">
+                            <label for="address">Street Address :</label>
+                            <input id="address" type="text" name="street_address" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="suburb">Suburb :</label>
+                            <input id="suburb" type="text" name="suburb_address" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="city">Town/City :</label>
+                            <input id="city" type="text" name="city_address" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="postcode">Postcode :</label>
+                            <input id="postcode" type="text" name="postcode" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="phone_number">Work/Home Number :</label>
+                            <input id="phone_number" type="tel" name="phone_number" placeholder="eg. 47 123 456" required>
+
+                        </div>
+                        <div class="form-row">
+                            <label for="mobile">Mobile :</label>
+                            <input id="mobile" type="tel" name="mobile" placeholder="eg. 0412 345 678">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email_label">Email Address :</label>
+                            <input id="email_label" type="text" name="email" required>
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset>
+                        <div class="form-row" id="payment_options">
+                            <label>Payment Options :</label>
+                            <div id="payment_options_right">
+                                <input type="radio" id="payment_option_cash" name="payment_option" value="cash" required>
+                                <label class="payment_option" for="payment_option_cash">Cash</label>
+                                <!--<input type="text" name="payment_value_cash">-->
+                                <br><input type="radio" id="payment_option_cheque" name="payment_option" value="cheque" required>
+                                <label class="payment_option" for="payment_option_cheque">Cheque</label>
+                                <!--<input type="text" name="payment_value_cheque">-->
+                                <br><input type="radio" id="payment_option_debit" name="payment_option" value="debit" required>
+                                <label class="payment_option" for="payment_option_debit">Direct Debit to : NQ Ensembles Inc. BSB 034 222
+                                    Acc 173 033
+                                    <span class="conditions" >(We will contact you to arrange the transaction)</span>
+                                </label>
+                            </div>
+                    </fieldset>
+
+
+
+
+                    <div id="submit_button_holder">
+                        <input type="submit" value="Submit" class="button" onclick="submit_function()">
+                        <input type="reset" value="Clear" class="button">
+                        <script id="forms_submit">
+                            function submit_function() {
+                                document.getElementById("sponsorship").submit();
+                            }
+                        </script>
+                    </div>
+
+
+
+
+                    <!--<div class="form-button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear Form">
+                    </div>-->
+                    <!--<div id="form-button">Submit
+
+                    </div>
+                    <div id="form-button">Clear
+
+                    </div>-->
+                    <!--<input type="submit" value="Submit" class="button_form">
+                        <input type="reset" value="Clear" class="button_form">-->
+                </form>
+ <!---------------------------end form------------------->
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer-container">
+    <div class="footer">
+        <p>
+            Name: Barrier Reef Orchestra<br>
+            Post: PO Box 576, Townsville Qld 4810<br>
+            Phone: +61 7 47 222 789<br>
+            Email: <a href="mailto:brotownsville@gmail.com">brotownsville@gmail.com</a><br>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

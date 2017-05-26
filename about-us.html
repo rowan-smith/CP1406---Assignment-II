@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BRO: About Us</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/bro.png">
+</head>
+<body>
+
+<nav>
+    <ul class="nav">
+        <li><a href="index.html">Barrier Reef Orchestra</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="supporters.html">Supporters</a></li>
+        <li><a href="support-us.html">Support Us</a></li>
+        <li><a id="current">About Us</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="header">
+        <h1>Barrier Reef Orchestra</h1>
+    </div>
+</header>
+
+<section class="content-container">
+    <div class="main-border">
+        <div class="main">
+            <h1 id="about">About Us</h1>
+            <p>
+                The Townsville Barrier Reef Orchestra was has been around since the year 2000.
+                In the years before it’s formation, many Townsville art and music lovers sought
+                to introduce a community based orchestra into their city’s culture.
+                When the new millennium came around, so too did the opportunity they’d waited for.<br>
+            </p>
+            <p hidden id="AUM">
+                To test the viability of this new orchestra,
+                a weekend workshop began that was run by the senior lecturer
+                of the Canberra School of Music – Richard McIntyre. Many aspiring musicians
+                were invited to these meetings,
+                and thus the Barrier Reef Orchestra was born.<br><br>
+
+                Since then, the orchestra has performed many times with various guest
+                conductors directing the show under the patronage of the North Queensland
+                Ensembles Inc. While typically the orchestra as a whole only performs 3 major concerts
+                per year, smaller groups of orchestra members regularly perform throughout the year in
+                shows such as Orpheus Strings, Pandanus Winds, Kingfisher Trio and many more.
+            </p>
+            <a href="about-us.html#about">
+                <input onclick="AUMF(this)"
+                   type="button"
+                   class="button"
+                   value="▼ Read More ▼">
+            </a>
+
+            <script>
+                function AUMF(button) {
+                    var x = document.getElementById('AUM');
+                    if (x.style.display === 'block') {
+                        x.style.display = 'none';
+                        button.value="▼ Read More ▼";
+                    } else {
+                        x.style.display = 'block';
+                        button.value="▲ Read Less ▲";
+                    }
+                }
+            </script>
+
+            <h1 class="space" id="OR">Orchestra Composition</h1>
+            <p>
+                Music is the culmination of a variety of sounds combined in
+                such a way that inspires feelings in the listener. Orchestras use this
+                to a greater degree, which allows for more nuances in the sound created.<br>
+            </p>
+            <div hidden id="OCM">
+                <p>
+                    With so many different tones and pitches, it can be difficult to identify
+                    which instrument is responsible for what. So, for those looking to find
+                    out more, below is a compilation of an orchestra’s many families of sound
+                    and the instruments that belong to them.
+                </p>
+
+                <div class="instruments">
+                    <p>
+                        <img class="image-box" src="images/instruments/string/violin.png">
+                        String – String instruments produce theirs sounds by vibrating the strings.
+                        By changing the thickness, length, and tension of the string, the sound
+                        created can be modified. Strings that are tight or thin create a higher
+                        pitched sound compared to strings that are loose or thick. Some string
+                        instruments also have companion tools that utilize their own strings in
+                        harmony with the main instrument.
+                    </p>
+                </div>
+
+                <div class="instruments">
+                    <p>
+                        <img class="image-box" src="images/instruments/brass/french-horn.png">
+                        Brass – Brass instruments are the tubed shaped instruments that players
+                        use with their lips. Instruments with larger mouth piece openings produce
+                        lower base sounds than those with small mouth pieces. The main method of
+                        altering a brass instruments sound is by opening or closing tubes of various
+                        length via valves. As tubes of different length create different sounds, the
+                        sounds each of these tubes make will be different to each adding, allowing
+                        for some variance in sound.<br>
+                    </p>
+                </div>
+
+                <div class="instruments">
+                    <p>
+                        <img class="image-box" src="images/instruments/percussion/cymbal.png">
+                        Percussion – Percussion instruments have perhaps the most simple classification
+                        of instrument families. If an instrument is struck to make it’s sound, it is a
+                        percussion instrument. Due to the similarities between some percussion instruments,
+                        many musicians learn to use multiple kinds of percussion instruments as they can
+                        easily translate their initial skills. Sounds created are influenced by how hard
+                        the instrument is struck, as well as other factors such as such as the location hit,
+                        and in the case of drums, how tight the head of barrel-like percussion instruments are.<br>
+                    </p>
+                </div>
+
+                <div class="instruments">
+                    <p>
+                        <img class="image-box" src="images/instruments/woodwind/piccolo.png">
+                        Woodwind – Woodwind instruments are similar to Brass instruments in that they involve
+                        the users mouth. However, Woodwind instruments focus less on the actual instruments
+                        structure and more on the path the air blown in must travel. Woodwind musicians are
+                        constantly covering and uncovering multiple holes adorning their instruments, which
+                        alters the pitch and tone of the sound produced. While not anymore, Woodwind instruments
+                        used to all be made from wood. This musical family has nonetheless kept the title
+                        despite most modern Woodwind instruments being made from a combination of plastic,
+                        wood or metal.
+                    </p>
+                </div>
+            </div>
+
+            <a href="about-us.html#OR">
+                <input onclick="OCMF(this)"
+                   type="button"
+                   class="button"
+                   value="▼ Read More ▼">
+            </a>
+
+            <script>
+                function OCMF(button) {
+                    var x = document.getElementById('OCM');
+                    if (x.style.display === 'block') {
+                        x.style.display = 'none';
+                        button.value="▼ Read More ▼";
+                    } else {
+                        x.style.display = 'block';
+                        button.value="▲ Read Less ▲";
+                    }
+                }
+            </script>
+
+            <h1 class="space" id="CB">Community Benefits</h1>
+
+            <p>
+                The Barrier Reef Orchestra is a community driven organisation. Our dedicated
+                members volunteer their time and talent to practice each performance for you to see.
+                We each believe in doing our part to keep this amazing part of our culture blooming,
+                as music is one of the universal languages we share as people.
+            </p>
+            <p hidden id="CBM">
+                It allows us to share and understand feelings in a way that words cannot do alone.
+                It is our goal to inspire as many music lovers as we can to pursue their ambitions
+                in this diverse cultural legacy whether they be young or old.<br><br>
+
+                To that end, the Barrier Reef Orchestra is always willing to assist aspiring musicians.
+                Solo artists can have difficulties in the beginning phases of their careers, as they
+                lack the recognition needed to secure a stable position. We assist in this by allowing
+                Solo artists to perform as guests in our performances. These performances allow the
+                artists to showcase their skills, making a mark in this cultural field. Our performances
+                only guests are not these aspiring artists, however. On occasion, we are also joined by
+                famous conductors such as Richard McIntyre and Mario Dobernig.
+            </p>
+            <a href="about-us.html#CB">
+                <input onclick="CBMF(this)"
+                   type="button"
+                   class="button"
+                   value="▼ Read More ▼">
+            </a>
+
+            <script>
+                function CBMF(button) {
+                    var x = document.getElementById('CBM');
+                    if (x.style.display === 'block') {
+                        x.style.display = 'none';
+                        button.value="▼ Read More ▼";
+                    } else {
+                        x.style.display = 'block';
+                        button.value="▲ Read Less ▲";
+                    }
+                }
+            </script>
+
+            <h1 class="space">Contact Information</h1>
+            <p>
+                Name: Barrier Reef Orchestra<br>
+                Post: PO Box 576, Townsville  Qld  4810<br>
+                Phone: +61 7 47 222 789<br>
+                Email: <a href="mailto:brotownsville@gmail.com">brotownsville@gmail.com</a><br>
+                Facebook: <a href="http://www.facebook.com/nqorchestra">www.facebook.com/nqorchestra</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-container">
+    <div class="footer">
+        <p>
+            Name: Barrier Reef Orchestra<br>
+            Post: PO Box 576, Townsville Qld 4810<br>
+            Phone: +61 7 47 222 789<br>
+            Email: <a href="mailto:brotownsville@gmail.com">brotownsville@gmail.com</a><br>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,135 +1,549 @@
-/*mainstyles.css*/
-
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Roboto', sans-serif;
-	background-color: #D0E5FC;
-	background-size: auto;
-	
+    background-color: lightskyblue;
 }
-#Artist_top_paragraph {
-	width: auto;
-	min-width: 0px;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	height: auto;
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
 }
-
-
-
-#banner {
-	margin: 0 auto;
-	padding: 0 auto;
-	color: red;
-	text-align: center;
-	height: 217px;
-	width: 100%;
-	position: static;
-	left: 0%;
-	
+h2 {
+    font-size: 2.5em;
+    padding-top: 1em;
+}
+h3 {
+    font-size: 2em;
+}
+p {
+    width: 100%;
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+ul {
+    list-style-type: none;
 }
 
-#homelink {
-	display: block;
-	left: auto;
-	top: auto;
-	height: 217px;
-	width: 100%;
-	position: absolute;
+/*GLOBAL NAVIGATION =====================================================*/
 
-}
-
-
-#side {
-	float:right;
-	width: 15%;
-	color: black;
-	background-color: #D0E5FC 
-
-
-}
-
-#side_text {
-	color: black;
-	text-align: left;
-	font-size: 2.5em;
-	-webkit-text-emphasis-color: red;
+.nav {
+    list-style: none;
+    text-align: center;
+    background-color: #3379a0;
 	position: fixed;
-	right: 0%;
-	background-color: #D0E5FC;
-	padding-right: 3.5%;
-	margin-bottom: 0px;
-	padding-bottom: 100%;
-	padding-top: 13%;
-	background-position: 0% 0%;
-	top: 0%;
-	
+	width: 100%
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.25em;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: #ebebeb;
+}
+
+#current {
+    text-decoration: underline;
+}
+
+/*GLOBAL HEADER =========================================================*/
+
+.header {
+    width: 100%;
+    height: 46em;
+
+    background: linear-gradient(to top,
+    rgba(74,74,232,1) 0%,
+    rgba(8,134,245,0.46) 100%),
+    url(../images/header.jpg) center center;
 
 }
 
-#side_text ul {
-	margin: 0;
-	padding-top: 1.5em;
-	padding-left: 0.5em;
-	white-space: 0em;
-	list-style: none;
+/*header text overlay*/
+.header h1 {
+    padding-top: 1.5em;
+    font-size: 5em;
+    color: #3c56e0;
+    text-align: center;
+}
+
+/*GLOBAL CONTENT ========================================================*/
+
+/*main container for content*/
+.content-container {
+    width: 100%;
+    display: flex;
+}
+
+/*border for content*/
+.main-border {
+    width: 100%;
+    height: 100%;
+    color: #434343;
+    background-color: #6CC1F8;
+    border-radius: 0.5em;
+    margin: 2em;
+}
+
+/*content from border space*/
+.main {
+    padding: 2em;
+    overflow: auto;
+}
+
+/*GLOBAL FOOTER =========================================================*/
+
+/*main container for the footer*/
+.footer-container {
+    padding: 0 2em 2em 2em;
+}
+
+/*facebook widget*/
+.fb-page {
+    width: 50%;
+    border-radius: 0.5em;
+    float: left;
+    padding: 2em 0 0 0;
+}
+
+/*footer settings*/
+.footer {
+    padding: 1em 2em 2em 2em;
+    height: 10em;
+    background-color: #6CC1F8;
+    border-radius: 0.5em;
 
 }
-#side_text a {
-	color: white;
-	text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
+
+/*paragraph size in footer*/
+.footer p {
+    text-align: center;
+    height: 50%
+}
+
+/*GLOBAL BUTTON =========================================================*/
+
+/*button look*/
+.button {
+    padding: 0.5em;
+    background-color: #63AAFF;
+    box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+/*button look after click*/
+.button:visited { color: black }
+
+/* OTHER ===============================================================*/
+
+/*puts a space at the top of the first paragraph*/
+.first-paragraph{
+    margin-top: 1em;
+}
+
+/*Index =============================*/
+
+.content-1 {
+    width: auto;
+    border-radius: 0.5em;
+    background-color: lightskyblue;
+    margin: 0 0 0 0;
+    padding: 2em;
+}
+
+.content-2-container {
+    width: auto;
+    background-color: lightskyblue;
+    margin: 2em 0 0 0;
+    border-radius: 0.5em;
+    padding: 2em;
+}
+
+.main-image {
+    width: 100%;
+    background-color: lightskyblue;
+    border-radius: 0.5em;
+    margin: 2em 0 0 0;
+    text-align: center;
+    min-height: 20em;
+	padding-bottom: 2em;
+}
+
+.main-image img {
+    padding: 2em 0 0 0;
+    margin: 0 0 0 0;
+    width: 90%;
+    height: 100%;
+}
+
+.index_button_container {
+    width: 100%;
+    text-align: center;
+}
+
+/*Members Page =============================*/
+
+/*table height control*/
+.member-table th {
+    padding: 0;
+    border: 0.125em solid rgba(32, 54, 224, 1.00);
+    font-weight: 100;
+    font-size: 2em;
+}
+
+/*make Role and Name bold*/
+#role {
+    font-weight: bold;
+}
+#name {
+    font-weight: bold;
+}
+
+/*column sizes*/
+.member-table-col1 {
+    width: 30%;
+}
+.member-table-col2 {
+    width: 70%;
+}
+
+/*controls the size and color of the members*/
+.membersItem {
+    padding: 1em;
+    background-color: #80C9F8;
+    margin-bottom: 7em;
+    min-height: 17.5em;
+}
+
+/*controls member item image size and position*/
+.membersItem img {
+    float: left;
+    padding: 0 2em 0 0;
+    height: 17.5em;
+    width: 12em;
+}
+
+/*Artist Pages =============================*/
+
+/*warps text and positions image*/
+.artist_image {
+    float: left;
+    margin: 2em 2em 1em 1em;
+    padding-top: 0.5em;
+}
+
+/*centers the buttons*/
+.artist_button_container {
+    width: 100%;
+    text-align: center;
+}
+
+/*About Us Content =========================*/
+
+/*space between the buttons and the headings*/
+.space {
+    margin-top: 1em;
+}
+
+.instruments {
+    width: 100%;
+    margin: 0 0 2em 0;
+    min-height: 16em;
+}
+
+.image-box {
+    float: left;
+    width: 6em;
+    height: 8em;
+    text-align: center;
+}
+
+/*Gallery ==================================*/
+
+.section section_gallery::before, section::after {
+    content: "";
+    display: block;
+}
+
+.section section_gallery::after {
+    clear: both;
+    padding-bottom: 2em;
+}
+
+figure {
+    width: calc(100% /3);
+    float: left;
+    padding-bottom: 3em;
+    position: relative;
+    text-align: center;
+
+}
+
+figure a{
+    display: inline-block;
+}
+
+figure img {
+    width: 25em;
+    vertical-align: middle;
+    margin: 1em 1em 1em 1em;
+    border-radius: 1em;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    height: 20em;
+
+}
+
+figure img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+#gallery_button_holder {
+    padding: 2em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* media code for image gallery*/
+
+@media only screen and (max-width: 1200px) {
+    html {
+        fontsize:14px;
+    }
+    figure {
+        width: calc(100%/2);
+    }
+}
+
+/*Events ==========================*/
+
+/* Main Page =============*/
+
+/*calender lists*/
+.cal li {
+    float: left;
+    border-radius: 0.5em;
+    margin: 1%;
+    width: 21%;
+    background: lightskyblue;
+    text-align: center;
+    font-size: 2em;
+	color: black
+}
+
+.cal li:hover {
+    background: deepskyblue;
 	text-decoration: none;
-
-}
-#side_text a:hover {
-	color: #0066BB;
-	text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
-
 }
 
+/* Calender =============*/
+/*WW3 SCHOOLS CODE*/
 
-#main {
-	
-	float: left;
-	width: 80%;
-	min-height: 25em;
-	background-color: #BDD7EE;
-	text-align: left;
-	font-size: 1.5em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;		
-	
+/* Month header */
+.month {
+    width: 100%;
+    background: lightskyblue;
+    padding-top: 2em;
+}
+
+/* Month list */
+.month ul {
+    height: 8em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.month ul li {
+    color: #000000;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+    padding-left: 2em;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+    padding-right: 2em;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    height: 3em;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    color: #777;
+    padding-top: 2em;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 1.5em;
+    background: #1abc9c;
+    color: white;
+}
+
+.days a {
+    text-decoration: none;
+}
+
+/*Sign Up/Support Us ==========================*/
+
+#rounded_borders {  /*===== Sets form container div to have rounded borders*/
+    background-color: lightskyblue;
+    border-radius: 10px;
+    margin: 1em 1em 1em 1em;
+    padding-top:0.5em;
+    padding-bottom: 3em;
+
 }
 
 #content {
-	padding: 1em;
+    padding: 1em;
+}
+
+form {
+    text-align: left;
+    padding: 1em;
+}
+form label {
+    width: 10em;
+    float: left;
+}
+form label.dob {
+    width: 4em;
+    margin-left: 1em;
+}
+form input {
+    float: left;
+    margin: 0.5em 0;
+}
+
+.form-row {
+    clear: left;
+}
+
+.form-column {
+    clear: right;
+}
+
+#address {
+    width: 30em;
+}
+
+#mobile_label {
+    width: 5em;
+    /*margin-left: 1em;*/
+}
+
+#postcode {
+    width: 5em;
+}
+
+#email_label {
+    width: 30em;
+}
+
+.conditions {
+    font-size: smaller;
+}
+
+.payment_option {
+    width: auto;
+}
+
+#payment_options input[type='text']{
+    width: 5em;
+    margin-right: 1em;
+}
+
+#payment_options_right {
+    float: left;
+}
+
+#member_h1 {
+    color: black;
+    text-align: center;
+}
+
+.h3_additional {
+    font-size: smaller;
+}
+
+#help_left {
+    padding-top: 1em;
+}
+
+#help_right {
+    padding-top: 1em;
 }
 
 
-#lower{
-	clear: left;
-	background: cornflowerblue;
-	text-align: center
+.button:hover {
+    background:#62c5ff;
 }
 
+#submit_button_holder {
 
+    padding: 2em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 
-img {
-	float: left;
-	border: 1px dotted black;
-	margin: 0 15px 15px 1px;
 }
 
-#h1 {
-	padding-left: 14em
+fieldset {
+    border-radius: 5px;
+    margin: 1em 0;
+
 }
